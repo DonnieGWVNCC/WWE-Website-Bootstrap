@@ -1,0 +1,16 @@
+# Donnie Garrison CIT 205 Module 3 Exercise 09/17/2023
+
+# This step allows the Googlebot to crawl all the appropiate html pages
+# The Googlebot is disallowed to crawl the subfolders of images and css
+User-agent: Googlebot
+Allow: /fake.html
+Allow: /favorites.html
+Allow: /index.html
+Allow: /photos.html
+Disallow: /images/
+Disallow: /css/
+
+# This step applies to all other bots besides Googlebot
+# It disallows all other bots to crawl the any of the website
+User-agent: *
+Disallow: /
